@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Buffers.Text;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -12,7 +11,7 @@ namespace OvhDynDNSClient
     {
         static async Task Main(string[] args)
         {
-            if (args.Length != 0)
+            if (args.Length != 3)
             {
                 Console.WriteLine("Please pass all required arguments");
                 return;
